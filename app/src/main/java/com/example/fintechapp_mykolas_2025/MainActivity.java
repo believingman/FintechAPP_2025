@@ -1,12 +1,14 @@
 package com.example.fintechapp_mykolas_2025;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void ChangeTextClick(View view) {
+        TextView MyMain = findViewById(R.id.MyMain);
+        MyMain.setText("Naujausias mano tekstas!");
+
     }
 }
