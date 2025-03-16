@@ -1,5 +1,6 @@
 package com.example.fintechapp_mykolas_2025;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
         TextView MyMain = findViewById(R.id.MyMain);
         MyMain.setText("Naujausias mano tekstas!");
 
+    }
+
+    public void ChangeColor(View view) {
+        TextView MyMain = findViewById(R.id.MyMain);
+        MyMain.setTextColor(Color.CYAN);
     }
 }
